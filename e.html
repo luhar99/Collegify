@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+  <html>
+      
+      <title> Collegify - Step 2 </title>
+      
+    <head>
+        
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css">
+        
+        <link href="../dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+        
+    <link rel="icon" href="img/logo.gif">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="manifestinteractive-jqvmap-45a3507/dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="manifestinteractive-jqvmap-45a3507/dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
+    <script type="text/javascript" src="manifestinteractive-jqvmap-45a3507/examples/js/jquery.vmap.sampledata.js"></script>
+        
+    <script>
+      jQuery(document).ready(function () {
+        jQuery('#vmap').vectorMap({
+          map: 'world_en',
+          backgroundColor: '#333333',
+          color: '#ffffff',
+          hoverOpacity: 0.7,
+          selectedColor: '#666666',
+          enableZoom: true,
+          showTooltip: true,
+          scaleColors: ['#C8EEFF', '#006491'],
+          values: sample_data,
+          normalizeFunction: 'polynomial'
+        });
+      });
+    </script>
+        
+    </head>
+      
+       <body>
+           <br><br>
+           <center>
+               <h3 class="blue-text text-darken-2; animated fadeInDown">Select the country you wish to pursue your future studies in</h3>
+               <br><br>
+               
+            <!-- Dropdown Trigger -->
+                <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Click here to choose a country</a>
+
+            <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!">Canada</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">India</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Japan</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">UK</a></li>
+                    <li class="divider"></li>
+                    <li><a href="home.html">USA</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Singapore</a></li>
+                    </ul>
+               <br><br>
+              
+               <br><br><br><br>
+                <div id="vmap" style="width: 1200px; height: 700px;"></div>
+               <br><br>
+               
+               <a href="f.html" class="waves-effect waves-light btn-large" style="background:rgb(48, 224, 102)">Next</a>
+               
+             <br><br>
+               
+                
+           </center>
+        
+
+
+    
+<script src="js/jquery.vmap.js"></script>
+<script src="js/jquery.vmap.world.js"></script>
+<script src="js/jquery.vmap.sampledata.js"></script>
+ 
+<script>
+jQuery('#vmap').vectorMap({
+    map: 'world_en',
+    backgroundColor: null,
+    color: '#ffffff',
+    hoverOpacity: 0.7,
+    selectedColor: '#666666',
+    enableZoom: true,
+    showTooltip: true,
+    values: sample_data,
+    scaleColors: ['#C8EEFF', '#006491'],
+    normalizeFunction: 'polynomial'
+});
+</script>
+
+           
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+        
+    </body>
+  </html>
+        
+
+
+
+
+
+
+
+
+
